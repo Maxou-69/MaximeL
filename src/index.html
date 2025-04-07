@@ -6,7 +6,83 @@
     <link href="./css/output.css" rel="stylesheet" />
   </head>
   <body>
-    <h1 class="text-3xl font-bold underline bg-red-100">Hello world!</h1>
-    <a href="./calculatrice.html">Calculatrice</a>
+    <div class="navbar bg-primary text-primary-content">
+      <p class="btn btn-ghost text-xl">daisyUI</p>
+    </div>
+    <div class="flex flex-col justify-between p-1">
+      <progress
+        class="progress progress-primary md:w-56 m-2"
+        value="0"
+        max="100"
+      ></progress>
+      <progress
+        class="progress progress-primary md:w-56 m-2"
+        value="10"
+        max="100"
+      ></progress>
+      <progress
+        class="progress progress-primary md:w-56 m-2"
+        value="40"
+        max="100"
+      ></progress>
+      <progress
+        class="progress progress-primary md:w-56 m-2"
+        value="70"
+        max="100"
+      ></progress>
+      <progress
+        class="progress progress-primary md:w-56 m-2"
+        value="100"
+        max="100"
+      ></progress>
+    </div>
+    <!-- Calculatrice + redirect form -->
+    <div
+      class="collapse collapse-arrow bg-base-100 border-base-300 border border-orange-950 m-2"
+    >
+      <input type="checkbox" class="peer" />
+      <div
+        class="collapse-title bg-primary text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content font-semibold"
+      >
+        Calculatrice/Me contacter
+      </div>
+      <div
+        class="collapse-content md:flex md:flex-row justify-around bg-primary text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content"
+      >
+        <div class="card bg-neutral text-neutral-content md:w-96 shadow-sm m-1">
+          <div class="card-body">
+            <h2 class="card-title">Calculatrice</h2>
+            <div class="card">
+              <div class="card flex flex-col justify-around p-1">
+                <input class="btn m-1" type="number" id="valeurA" class="btn" />
+                <input class="btn m-1" type="number" id="valeurB" class="btn" />
+              </div>
+              <div class="card flex flex-row justify-around p-2">
+                <button class="btn btn-primary" id="+">+</button>
+                <button class="btn btn-primary" id="-">-</button>
+                <button class="btn btn-primary" id="*">*</button>
+              </div>
+            </div>
+            <div class="card-actions justify-center p-1">
+              <p class="btn text-center p-1" id="resultat"></p>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-neutral md:w-96 shadow-sm m-1">
+          <div class="card-body">
+            <h2 class="card-title">Formulaire de contact</h2>
+            <p>
+              Pour me contacter vous devez cliquer sur le bouton si dessous et
+              remplir un formulaire
+            </p>
+            <div class="card-actions justify-center">
+              <button class="btn btn-primary">Me contacter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
+  <script src="./js/main.js"></script>
+  <script src="./js/calculatrice.js"></script>
 </html>
