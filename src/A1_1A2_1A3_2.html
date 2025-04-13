@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./css/output.css" rel="stylesheet" />
+  </head>
+  <body class="p-6">
+    <div class="max-w-md mx-auto bg-secondary p-6 border rounded shadow-md">
+      <h2 class="text-xl font-bold mb-4">Formulaire de Contact</h2>
+      <form
+        action="mailto:votre-email@example.com"
+        method="post"
+        enctype="text/plain"
+      >
+        <div class="mb-4">
+          <label class="block">Nom</label>
+          <input
+            type="text"
+            name="nom"
+            class="w-full px-3 py-2 border rounded"
+            required
+          />
+        </div>
+        <div class="mb-4">
+          <label class="block">Prénom</label>
+          <input
+            type="text"
+            name="prenom"
+            class="w-full px-3 py-2 border rounded"
+            required
+          />
+        </div>
+        <div class="mb-4">
+          <label class="block">Email</label>
+          <input
+            type="email"
+            name="email"
+            class="w-full px-3 py-2 border rounded"
+            required
+            value="email@email.com"
+          />
+        </div>
+        <div class="mb-4">
+          <label class="block">Message</label>
+          <textarea
+            name="message"
+            class="w-full px-3 py-2 border rounded"
+            required
+          ></textarea>
+        </div>
+        <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded">
+          Envoyer
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
