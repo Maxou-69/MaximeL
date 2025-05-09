@@ -25,11 +25,12 @@ const questionnaire = [
   },
 ];
 
+const questionContainer = document.getElementById("question-container");
+const messageContainer = document.getElementById("message-container");
+
 document.addEventListener("DOMContentLoaded", () => {
   const currentPage = window.location.pathname.split("/").pop();
   if (currentPage === "questionnaire.html") {
-    const questionContainer = document.getElementById("question-container");
-    const messageContainer = document.getElementById("message-container");
     let currentQuestionIndex = 0;
     let reponses = "";
 
